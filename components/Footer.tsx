@@ -1,32 +1,60 @@
 import styles from '@/styles/style'
-import { FaReact } from 'react-icons/fa' // Import the React icon
-import { socialMedia } from '../constants'
+import { footerLinks, socialMedia } from '.'
 
 const Footer = () => (
-  <section className={`${styles.flexCenter} ${styles.paddingY} flex-col`}>
+  <section
+    className={`${styles.flexCenter} ${styles.paddingY}  w-full`}
+    style={{
+      width: '100%',
+      height: '529px',
+      flexShrink: 0,
+      background: `url('/assets/images/footer.png') lightgray -0.573px -40.736px / 100.066% 108.213% no-repeat`,
+      mixBlendMode: 'color-dodge',
+    }}
+  >
     <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
       <div className="flex-[1] flex flex-col justify-start mr-10">
-        <FaReact size={50} color="green" /> {/* Use the React icon here */}
+        <img alt="hoobank" className="w-[266px] h-[72.14px] object-contain" />
         <p className={`${styles.paragraph} mt-4 max-w-[312px]`}>
           A new way to make the payments easy, reliable and secure.
         </p>
       </div>
 
       <div className="flex-[1.5] w-full flex flex-row justify-between flex-wrap md:mt-0 mt-10">
-        {/* ... (unchanged code for footer links) */}
+        {footerLinks.map((footerlink) => (
+          <div
+            key={footerlink.title}
+            className={`flex flex-col ss:my-0 my-4 min-w-[150px]`}
+          >
+            <h4 className="font-poppins font-medium text-[18px] leading-[27px] text-white">
+              {footerlink.title}
+            </h4>
+            <ul className="list-none mt-4">
+              {footerlink.links.map((link, index) => (
+                <li
+                  key={link.name}
+                  className={`font-poppins font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer ${
+                    index !== footerlink.links.length - 1 ? 'mb-4' : 'mb-0'
+                  }`}
+                >
+                  {link.name}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </div>
     </div>
 
-    <div className="w-full flex justify-between items-center md:flex-row flex-col pt-6 border-t-[1px] border-t-[#3F3E45]">
+    <div className="w-full flex justify-between items-center md:flex-row flex-col pt-6">
       <p className="font-poppins font-normal text-center text-[18px] leading-[27px] text-white">
         Copyright Ⓒ 2022 HooBank. All Rights Reserved.
       </p>
 
       <div className="flex flex-row md:mt-0 mt-6">
-        {socialMedia.map((social: any, index) => (
+        {socialMedia.map((social, index) => (
           <img
             key={social.id}
-            src={social.icon}
             alt={social.id}
             className={`w-[21px] h-[21px] object-contain cursor-pointer ${
               index !== socialMedia.length - 1 ? 'mr-6' : 'mr-0'

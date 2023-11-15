@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { FaTimes, FaBars, FaHome } from 'react-icons/fa'
-import { navLinks } from '../constants'
+import { navLinks } from '.'
 
 const Navbar = () => {
   const [active, setActive] = useState('Products')

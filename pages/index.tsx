@@ -4,13 +4,13 @@ import Navbar from '@/components/Navbar'
 import Hero from '@/components/Hero'
 import Stats from '@/components/Stats'
 import Business from '@/components/Business'
-import CardDeal from '@/components/CardDeal'
-import Testimonials from '@/components/Testimonials'
-import Billing from '@/components/Billing'
+
 import Clients from '@/components/Clients'
 import Footer from '@/components/Footer'
-import CTA from '@/components/CTA'
+import CTA from '@/components/Testimonials'
 import styles from '@/styles/style'
+import AppsGames from '@/components/Apps&Games'
+import Testimonials from '@/components/Testimonials'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -32,11 +32,10 @@ export default function Products() {
       <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
           <Business />
-          <Billing />
-          <CardDeal />
-          <Testimonials />
+
+          <AppsGames />
           <Clients />
-          <CTA />
+          <Testimonials />
           <Footer />
         </div>
       </div>
