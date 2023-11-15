@@ -11,7 +11,7 @@ const Hero = () => {
         mixBlendMode: 'color-dodge',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
-        width: '100%', // Full width of the container
+        width: '100%',
         height: '947px',
         flexShrink: 0,
       }}
@@ -37,7 +37,7 @@ const Hero = () => {
           phones, or another medium altogether. Gaming is a nuanced term that
           suggests regular gameplay, possibly as a hobby.
         </p>
-        <div className="flex">
+        <div className="flex mt-5">
           <a href="/link-to-where-you-want-to-go" className="cursor-pointer">
             <img
               src={'/SVGs/gradientButton.svg'}
