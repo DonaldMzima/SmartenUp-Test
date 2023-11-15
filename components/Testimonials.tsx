@@ -1,33 +1,33 @@
+import React from 'react'
+import { Carousel } from 'react-responsive-carousel'
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import styles from '@/styles/style'
-import { feedback } from '../constants'
+import { TestimonialsFeedBack } from '@/components' // Make sure you import TestimonialsFeedBack correctly
+import FeedbackCard from './AppsCards'
 
-import FeedbackCard from './FeedbackCard'
+const Testimonials = () => {
+  // Filter the feedback array to include only the first two elements
+  const filteredFeedback = TestimonialsFeedBack.slice(0, 2)
 
-const Testimonials = () => (
-  <section
-    id="clients"
-    className={`${styles.paddingY} ${styles.flexCenter} flex-col relative `}
-  >
-    <div className="absolute z-[0] w-[60%] h-[60%] -right-[50%] rounded-full blue__gradient bottom-40" />
-
-    <div className="w-full flex justify-between items-center md:flex-row flex-col sm:mb-16 mb-6 relative z-[1]">
-      <h2 className={styles.heading2}>
-        What People are <br className="sm:block hidden" /> saying about us
-      </h2>
-      <div className="w-full md:mt-0 mt-6">
-        <p className={`${styles.paragraph} text-left max-w-[450px]`}>
-          Everything you need to accept card payments and grow your business
-          anywhere on the planet.
-        </p>
-      </div>
-    </div>
-
-    <div className="flex flex-wrap sm:justify-start justify-center w-full feedback-container relative z-[1]">
-      {feedback.map((card) => (
-        <FeedbackCard key={card.id} {...card} />
-      ))}
-    </div>
-  </section>
-)
+  return (
+    <section id="clients" className={styles.paddingY}>
+      <Carousel
+        showArrows={true}
+        emulateTouch={true}
+        showThumbs={false}
+        showStatus={false}
+        infiniteLoop={true}
+        centerMode={true}
+        centerSlidePercentage={25}
+      >
+        {filteredFeedback.map((card) => (
+          <div key={card.id} className="w-full mb-5 px-20">
+            <FeedbackCard {...card} />
+          </div>
+        ))}
+      </Carousel>
+    </section>
+  )
+}
 
 export default Testimonials
