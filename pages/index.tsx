@@ -30,9 +30,10 @@ export default function Products() {
           <Business />
 
           <AppsGames />
-
-          <Testimonials />
         </div>
+      </div>
+      <div className={`flex justify-center items-center w-full`}>
+        <Testimonials />
       </div>
       <div className={`bg-primary ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>

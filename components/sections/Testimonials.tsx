@@ -9,9 +9,12 @@ const Testimonials = () => {
       id="clients"
       className={`${styles.paddingY} flex justify-center items-center`}
     >
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 ">
+      <div className="flex flex-wrap justify-center p-5">
         {TestimonialsFeedBack.map(({ id, content, name, title, img, src }) => (
-          <div key={id} className="mb-5">
+          <div
+            key={id}
+            className="mb-5 mx-20 flex flex-col items-center w-full md:w-1/2 lg:w-1/3"
+          >
             <FeedbackCard
               content={content}
               name={name}

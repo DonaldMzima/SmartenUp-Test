@@ -63,6 +63,7 @@ export const AppsData = [
     id: 'feedback-1',
     src: '/assets/apps/Rectangle1.png',
     name: 'Cameron Williamson',
+    title: 'Core Philosophies',
     subtitle: 'Gillette',
     img: '/assets/avatar/Ellipse5.png',
   },
@@ -70,6 +71,7 @@ export const AppsData = [
     id: 'feedback-2',
     src: '/assets/apps/Rectangle2.png',
     name: 'Dianne Russell',
+    title: 'Core Philosophies',
     subtitle: 'Louis Vuitton',
     img: '/assets/avatar/Ellipse6.png',
   },
@@ -77,6 +79,7 @@ export const AppsData = [
     id: 'feedback-3',
     src: '/assets/apps/Rectangle3.png',
     name: 'Jane Cooper',
+    title: 'Core Philosophies',
     subtitle: 'MasterCard',
     img: '/assets/avatar/Ellipse7.png',
   },
@@ -84,6 +87,7 @@ export const AppsData = [
     id: 'feedback-4',
     src: '/assets/apps/Rectangle4.png',
     name: 'Cody Fisher',
+    title: 'Core Philosophies',
     subtitle: 'The Walt Disney Company',
     img: '/assets/avatar/Ellipse8.png',
   },
@@ -91,6 +95,7 @@ export const AppsData = [
     id: 'feedback-5',
     src: '/assets/apps/Rectangle5.png',
     name: 'Wade Warren',
+    title: 'Core Chilosophies',
     subtitle: 'Gillette',
     img: '/assets/avatar/Ellipse9.png',
   },
@@ -98,6 +103,7 @@ export const AppsData = [
     id: 'feedback-6',
     src: '/assets/apps/Rectangle6.png',
     name: 'Robert Fox',
+    title: 'Core Philosophies',
     subtitle: `L'Oréal`,
     img: '/assets/avatar/Ellipse10.png',
   },
@@ -149,19 +155,27 @@ export const TestimonialsFeedBack = [
 //   },
 // ]
 
-export const stats = [
+export const Companies = [
   {
-    id: 'stats-1',
-    title: 'Unique style',
+    id: 'twitch-3',
+    logo: '/assets/images/twitch.png',
+  },
+
+  {
+    id: 'roblox-2',
+    logo: '/assets/images/roblox.png',
   },
   {
-    id: 'stats-2',
-    title: 'Project finished',
-    value: '/assets/images/200+.png',
+    id: 'asus-3',
+    logo: '/assets/images/asus.png',
   },
   {
-    id: 'stats-3',
-    title: 'Happy customer',
+    id: 'canon-3',
+    logo: '/assets/images/canon.png',
+  },
+  {
+    id: 'microsoft-3',
+    logo: '/assets/images/microsoft.png',
   },
 ]
 

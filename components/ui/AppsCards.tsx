@@ -5,10 +5,17 @@ export type AppsCardsProps = {
   src: string
   name: string
   subtitle: string
+  title: string
   img: string
 }
 
-const AppsCards: React.FC<AppsCardsProps> = ({ src, name, subtitle, img }) => (
+const AppsCards: React.FC<AppsCardsProps> = ({
+  src,
+  name,
+  title,
+  subtitle,
+  img,
+}) => (
   <div
     style={{
       width: '397px',
@@ -30,15 +37,19 @@ const AppsCards: React.FC<AppsCardsProps> = ({ src, name, subtitle, img }) => (
         className="w-[361px] h-[265px] flex-shrink-0 border-[0px] rounded-[10px] mt-4  ml-4 relative"
       />
     </div>
-
-    <div className="flex flex-row  mt-20 ml-5">
+    <div>
+      <h4 className="text-white font-Lato text-xl font-medium leading-[26.544px] tracking-wide mt-5 ml-7">
+        {title}
+      </h4>
+    </div>
+    <div className="flex flex-row  mt-9 ml-5">
       <img src={img} alt={name} className="w-[48px] h-[48px] rounded-full" />
       <div className="flex ml-3 flex-col">
-        <h4 className="text-white font-Lato text-xl font-medium leading-[26.544px] tracking-wide uppercase">
+        <h4 className="text-white font-Lato text-md font-medium leading-[26.544px] tracking-wide ">
           {name}
         </h4>
 
-        <p className="font-poppins font-normal text-[16px] leading-[24px] text-white">
+        <p className="font-poppins font-normal text-[11px] leading-[24px] text-white">
           {subtitle}
         </p>
       </div>

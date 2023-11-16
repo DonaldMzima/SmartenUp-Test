@@ -22,6 +22,7 @@ const FeedbackCard: React.FC<FeedbackCardProps> = ({
       width: '607px',
       height: '388px',
       flexShrink: 0,
+      padding: 28,
       borderRadius: '10px',
       backgroundImage: `url('/assets/images/TestimonialVector.png')`,
       backgroundPosition: '0% 0%',
