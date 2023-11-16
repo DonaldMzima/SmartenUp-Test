@@ -1,16 +1,3 @@
-import {
-  FaUser,
-  FaShieldAlt,
-  FaExchangeAlt,
-  FaStar,
-  FaInstagram,
-  FaFacebook,
-  FaTwitter,
-  FaLinkedin,
-  FaAirbnb,
-  FaDropbox,
-} from 'react-icons/fa' // Import icons from the react-icons/fa library
-
 export const navLinks = [
   {
     id: 'home',
@@ -52,26 +39,26 @@ export const features = [
 export const socialMedia = [
   {
     id: 'social-media-1',
-    icon: <FaInstagram />,
+    icon: '<FaInstagram />',
     link: 'https://www.instagram.com/',
   },
   {
     id: 'social-media-2',
-    icon: <FaFacebook />,
+    icon: '<FaFacebook />',
     link: 'https://www.facebook.com/',
   },
   {
     id: 'social-media-3',
-    icon: <FaTwitter />,
+    icon: '',
     link: 'https://www.twitter.com/',
   },
   {
     id: 'social-media-4',
-    icon: <FaLinkedin />,
+    icon: '',
     link: 'https://www.linkedin.com/',
   },
 ]
-export const feedback = [
+export const AppsData = [
   {
     id: 'feedback-1',
     src: '/assets/apps/Rectangle1.png',
@@ -118,41 +105,50 @@ export const feedback = [
 
 export const TestimonialsFeedBack = [
   {
-    id: 'feedback-1',
+    id: 'testimonial1',
     content:
-      'Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.',
-    name: 'Herman Jensen',
-    title: 'Founder & Leader',
-    // img: people01,
+      'One of the standout features of this gaming website is its extensive library of game guides and tutorials. It has helped me level up my skills, conquer challenging quests, and discover hidden secrets within games. The guides are comprehensive, easy to follow, and have undoubtedly elevated my gaming performance.',
+    name: 'Arlene McCoy',
+    title: `McDonald's`,
+    img: '/assets/avatar/testimonial1.png',
+    src: '/assets/images/stars.png',
+    logo: '/assets/images/line.png',
   },
   {
-    id: 'feedback-2',
+    id: 'testimonial',
     content:
-      "Money makes your life easier. If you're lucky to have it, you're lucky.",
-    name: 'Steve Mark',
-    title: 'Founder & Leader',
-    // img: people02,
+      "Another aspect that sets this website apart is its vibrant and passionate community. The forum section provides a platform for gamers from all walks of life to connect, share their experiences, and discuss their favorite titles. I've made valuable friendships and found like-minded individuals who share my enthusiasm for gaming.",
+    name: 'Kathryn Murphy',
+    title: 'General Electric',
+    img: '/assets/avatar/testimonial2.png',
+    src: '/assets/images/stars.png',
+    logo: '/assets/images/line.png',
   },
 ]
 
-export const clients = [
-  {
-    id: 'client-1',
-    logo: <FaAirbnb />,
-  },
-  {
-    id: 'client-2',
-    // logo: <FaBinance />,
-  },
-  {
-    id: 'client-3',
-    // logo: <FaCoinbase />,
-  },
-  {
-    id: 'client-4',
-    logo: <FaDropbox />,
-  },
-]
+// export const clients = [
+//   {
+//     id: 'client-1',
+//     logo: '/assets/images/star.png',
+//     name: 'Gaming spaning',
+//   },
+//   {
+//     id: 'client-2',
+//     logo: '/assets/images/star.png',
+//     name: 'Action - packed',
+//   },
+//   {
+//     id: 'client-3',
+//     logo: '/assets/images/star.png',
+//     name: 'mind - bending',
+//   },
+//   {
+//     id: 'client-4',
+//     logo: '/assets/images/star.png',
+//     name: 'collection og games',
+//   },
+// ]
+
 export const stats = [
   {
     id: 'stats-1',
@@ -173,66 +169,69 @@ export const stats = [
 
 export const footerLinks = [
   {
-    title: 'Useful Links',
+    title: 'company',
     links: [
       {
-        name: 'Content',
+        name: 'products',
         link: 'https://www.hoobank.com/content/',
       },
       {
-        name: 'How it Works',
+        name: 'apps & games',
         link: 'https://www.hoobank.com/how-it-works/',
       },
       {
-        name: 'Create',
+        name: 'features',
         link: 'https://www.hoobank.com/create/',
-      },
-      {
-        name: 'Explore',
-        link: 'https://www.hoobank.com/explore/',
-      },
-      {
-        name: 'Terms & Services',
-        link: 'https://www.hoobank.com/terms-and-services/',
       },
     ],
   },
   {
-    title: 'Community',
+    title: 'help',
     links: [
       {
-        name: 'Help Center',
+        name: 'support',
         link: 'https://www.hoobank.com/help-center/',
       },
       {
-        name: 'Partners',
+        name: 'about',
         link: 'https://www.hoobank.com/partners/',
       },
       {
-        name: 'Suggestions',
+        name: 'contact us',
         link: 'https://www.hoobank.com/suggestions/',
-      },
-      {
-        name: 'Blog',
-        link: 'https://www.hoobank.com/blog/',
-      },
-      {
-        name: 'Newsletters',
-        link: 'https://www.hoobank.com/newsletters/',
       },
     ],
   },
   {
-    title: 'Partner',
+    title: 'resources',
     links: [
       {
-        name: 'Our Partner',
+        name: 'youtube playlist',
         link: 'https://www.hoobank.com/our-partner/',
       },
       {
-        name: 'Become a Partner',
+        name: 'how to - blog',
+        link: 'https://www.hoobank.com/become-a-partner/',
+      },
+      {
+        name: 'terms & conditions',
         link: 'https://www.hoobank.com/become-a-partner/',
       },
     ],
+  },
+]
+
+export const bannerTexts = [
+  {
+    text: 'Action - Packed',
+    imageUrl: '',
+  },
+  {
+    text: 'Mind - Bending',
+    imageUrl: '',
+  },
+  {
+    text: 'Collection OG Gaming Spaning',
+    imageUrl: '',
   },
 ]

@@ -1,4 +1,13 @@
-const AppsCards = ({ src, name, title, img }: any) => (
+import React from 'react'
+
+export type AppsCardsProps = {
+  src: string
+  name: string
+  title: string
+  img: string
+}
+
+const AppsCards: React.FC<AppsCardsProps> = ({ src, name, title, img }) => (
   <div
     style={{
       width: '397px',

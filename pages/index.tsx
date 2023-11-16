@@ -1,16 +1,12 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import Navbar from '@/components/Navbar'
-import Hero from '@/components/Hero'
-import Stats from '@/components/Stats'
-import Business from '@/components/Business'
-
-import Clients from '@/components/Clients'
-import Footer from '@/components/Footer'
-import CTA from '@/components/Testimonials'
+import Navbar from '@/components/ui/Navbar'
+import Hero from '@/components/sections/Hero'
+import Business from '@/components/sections/Business'
+import Footer from '@/components/sections/Footer'
 import styles from '@/styles/style'
-import AppsGames from '@/components/Apps&Games'
-import Testimonials from '@/components/Testimonials'
+import AppsGames from '@/components/sections/Apps&Games'
+import Testimonials from '@/components/sections/Testimonials'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -29,13 +25,17 @@ export default function Products() {
         </div>
       </div>
 
-      <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+      <div className={`bg-primary ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
           <Business />
 
           <AppsGames />
-          <Clients />
+
           <Testimonials />
+        </div>
+      </div>
+      <div className={`bg-primary ${styles.flexStart}`}>
+        <div className={`${styles.boxWidth}`}>
           <Footer />
         </div>
       </div>

@@ -1,6 +1,8 @@
 import styles from '@/styles/style'
-import { feedback } from '.'
-import AppsCards from './AppsCards'
+import AppsCards from '../ui/AppsCards'
+import { AppsData, bannerTexts } from '@/utils'
+import { Marquee } from '../ui/Marquee'
+import { MainButton } from '../ui/Buttons/MainButton'
 
 const AppsGames = () => (
   <section
@@ -15,14 +17,18 @@ const AppsGames = () => (
         TOP
       </h1>
       <div className="flex mt-20">
-        {' '}
-        <a href="/link-to-where-you-want-to-go" className="cursor-pointer">
+        <MainButton>
+          <p className="upppercase">Yoyo</p>
+        </MainButton>
+
+        {/* <a href="/link-to-where-you-want-to-go" className="cursor-pointer">
           <img
             src={'/SVGs/gradientButton.svg'}
             alt="Logo"
             className="w-232 h-42 flex-shrink-0"
           />
-        </a>
+          <p>Yoyo</p>
+        </a> */}
         <a href="/another-link" className="cursor-pointer">
           <img
             src={'/SVGs/colorlessButton.svg'}
@@ -47,13 +53,17 @@ const AppsGames = () => (
       </div>
     </div>
 
-    <div className="flex flex-wrap sm:justify-start justify-center w-full feedback-container relative z-[1] items-center">
-      {feedback.map((card) => (
-        <div key={card.id} className="w-full md:w-1/2 lg:w-1/3 mb-10 px-28">
-          <AppsCards {...card} />
+    <div className="  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-0">
+      {AppsData.map((AppsData: any) => (
+        <div
+          key={AppsData.id}
+          className="w-full md:w-1/2 lg:w-1/3 mb-10  md:px-10 lg:px-4"
+        >
+          <AppsCards {...AppsData} />
         </div>
       ))}
     </div>
+    <Marquee items={bannerTexts} hasContainer={false} />
   </section>
 )
 

@@ -1,6 +1,6 @@
+import { navLinks } from '@/utils'
 import { useState } from 'react'
 import { FaTimes, FaBars, FaHome } from 'react-icons/fa'
-import { navLinks } from '.'
 
 const Navbar = () => {
   const [active, setActive] = useState('Products')
@@ -11,13 +11,13 @@ const Navbar = () => {
       className="w-full flex py-6 justify-between items-center navbar"
       style={{ background: '#2D1E6B' }}
     >
-      <div className="flex items-center">
+      <div className="flex items-center ">
         <img src={'/SVGs/logo.svg'} alt="Logo" width="32" height="32" />
-        <span className="ml-2 text-white font-Ondo text-1xl font-extrabold leading-[43.994px] tracking-widest">
+        <span className="ml-2 text-white font-Ondo text-2xl font-extrabold leading-[43.994px] tracking-widest">
           board
         </span>
       </div>
-      <ul className="list-none sm:flex hidden justify-center items-center flex-1">
+      <ul className="list-none sm:flex hidden justify-center items-center uppercase flex-1">
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
