@@ -222,14 +222,14 @@ export const footerLinks = [
 export const bannerTexts = [
   {
     text: 'Action - Packed',
-    imageUrl: '',
+    imageUrl: '/assets/images/star.png',
   },
   {
     text: 'Mind - Bending',
-    imageUrl: '',
+    imageUrl: '/assets/images/star.png',
   },
   {
     text: 'Collection OG Gaming Spaning',
-    imageUrl: '',
+    imageUrl: '/assets/images/star.png',
   },
 ]
