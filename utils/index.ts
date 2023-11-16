@@ -63,42 +63,42 @@ export const AppsData = [
     id: 'feedback-1',
     src: '/assets/apps/Rectangle1.png',
     name: 'Cameron Williamson',
-    title: 'Gillette',
+    subtitle: 'Gillette',
     img: '/assets/avatar/Ellipse5.png',
   },
   {
     id: 'feedback-2',
     src: '/assets/apps/Rectangle2.png',
     name: 'Dianne Russell',
-    title: 'Louis Vuitton',
+    subtitle: 'Louis Vuitton',
     img: '/assets/avatar/Ellipse6.png',
   },
   {
     id: 'feedback-3',
     src: '/assets/apps/Rectangle3.png',
     name: 'Jane Cooper',
-    title: 'MasterCard',
+    subtitle: 'MasterCard',
     img: '/assets/avatar/Ellipse7.png',
   },
   {
     id: 'feedback-4',
     src: '/assets/apps/Rectangle4.png',
     name: 'Cody Fisher',
-    title: 'The Walt Disney Company',
+    subtitle: 'The Walt Disney Company',
     img: '/assets/avatar/Ellipse8.png',
   },
   {
     id: 'feedback-5',
     src: '/assets/apps/Rectangle5.png',
     name: 'Wade Warren',
-    title: 'Gillette',
+    subtitle: 'Gillette',
     img: '/assets/avatar/Ellipse9.png',
   },
   {
     id: 'feedback-6',
     src: '/assets/apps/Rectangle6.png',
     name: 'Robert Fox',
-    title: `L'Oréal`,
+    subtitle: `L'Oréal`,
     img: '/assets/avatar/Ellipse10.png',
   },
 ]
@@ -153,17 +153,15 @@ export const stats = [
   {
     id: 'stats-1',
     title: 'Unique style',
-    value: '300+',
   },
   {
     id: 'stats-2',
     title: 'Project finished',
-    value: '200+',
+    value: '/assets/images/200+.png',
   },
   {
     id: 'stats-3',
     title: 'Happy customer',
-    value: '500+',
   },
 ]
 

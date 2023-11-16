@@ -1,6 +1,8 @@
 import styles, { layout } from '@/styles/style'
 import { bannerTexts, features } from '@/utils'
 import { Marquee } from '../ui/Marquee'
+import { TransparentButton } from '../ui/Buttons/TransparentButton'
+import { MainButton } from '../ui/Buttons/MainButton'
 
 type FeatureCardProps = {
   src: string
@@ -52,20 +54,16 @@ const Business = () => (
 
         <div className="flex mt-48">
           {' '}
-          <a href="/link-to-where-you-want-to-go" className="cursor-pointer">
-            <img
-              src={'/SVGs/gradientButton.svg'}
-              alt="Logo"
-              className="w-232 h-74 flex-shrink-0"
-            />
-          </a>
-          <a href="/another-link" className="cursor-pointer">
-            <img
-              src={'/SVGs/colorlessButton.svg'}
-              alt="Logo"
-              className="w-232 h-74 flex-shrink-0"
-            />
-          </a>
+          <MainButton>
+            <h1 className="text-white font-Lato font-medium text-base leading-[110.6%] tracking-wide uppercase">
+              VIEW ALL
+            </h1>
+          </MainButton>
+          <TransparentButton>
+            <h1 className="text-white font-Lato font-medium text-base leading-[110.6%] tracking-[0.72px] uppercase">
+              <img src={'/assets/images/PlayNow.png'} />
+            </h1>
+          </TransparentButton>
         </div>
         <div className="flex mt-48">
           <div
@@ -102,13 +100,11 @@ const Business = () => (
                 visuals to convey excitement, adventure, and the immersive
                 nature of gaming.
               </p>
-              <a href="/another-link" className="cursor-pointer">
-                <img
-                  src={'/SVGs/colorlessButton.svg'}
-                  alt="Logo"
-                  className="w-232 h-74 flex-shrink-0"
-                />
-              </a>
+              <TransparentButton>
+                <h1 className="text-white font-Lato font-medium text-base leading-[110.6%] tracking-[0.72px] uppercase">
+                  <img src={'/assets/images/PlayNow.png'} />
+                </h1>
+              </TransparentButton>
             </div>
           </div>
         </div>
