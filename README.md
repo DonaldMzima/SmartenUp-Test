@@ -8,7 +8,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-- [Node](https://nodejs.org/en/) minimum v12.3.0
+- [Node](https://nodejs.org/en/) minimum v18.17.0
 
 ### Installing
 
@@ -97,6 +97,5 @@ Due to the nature of this project, this is not avaliable
 | Version | Author                                | Date       |
 | ------- | ------------------------------------- | ---------- |
 | 1.0.5   | Donald Mzima <donaldmzima8@gmail.com> | 16/11/2023 |
-
 
 ![Capture](https://github.com/DonaldMzima/SmartenUp-Test/assets/90970069/d2863c8d-8d49-454a-856d-0b0545c40c20)
