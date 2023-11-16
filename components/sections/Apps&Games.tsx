@@ -3,6 +3,7 @@ import AppsCards from '../ui/AppsCards'
 import { AppsData, bannerTexts } from '@/utils'
 import { Marquee } from '../ui/Marquee'
 import { MainButton } from '../ui/Buttons/MainButton'
+import { TransparentButton } from '../ui/Buttons/TransparentButton'
 
 const AppsGames = () => (
   <section
@@ -18,7 +19,9 @@ const AppsGames = () => (
       </h1>
       <div className="flex mt-20">
         <MainButton>
-          <p className="upppercase">Yoyo</p>
+          <h1 className="text-white font-Lato font-medium text-base leading-[110.6%] tracking-wide uppercase">
+            Newest Games
+          </h1>
         </MainButton>
 
         {/* <a href="/link-to-where-you-want-to-go" className="cursor-pointer">
@@ -29,27 +32,21 @@ const AppsGames = () => (
           />
           <p>Yoyo</p>
         </a> */}
-        <a href="/another-link" className="cursor-pointer">
-          <img
-            src={'/SVGs/colorlessButton.svg'}
-            alt="Logo"
-            className="w-232 h-42 flex-shrink-0"
-          />
-        </a>
-        <a href="/another-link" className="cursor-pointer">
-          <img
-            src={'/SVGs/colorlessButton.svg'}
-            alt="Logo"
-            className="w-232 h-42 flex-shrink-0"
-          />
-        </a>
-        <a href="/another-link" className="cursor-pointer">
-          <img
-            src={'/SVGs/colorlessButton.svg'}
-            alt="Logo"
-            className="w-232 h-42 flex-shrink-0"
-          />
-        </a>
+        <TransparentButton>
+          <h1 className="text-white font-Lato font-medium text-base leading-[110.6%] tracking-[0.72px] uppercase">
+            Latest games
+          </h1>
+        </TransparentButton>
+        <TransparentButton>
+          <h1 className="text-white font-Lato font-medium text-base leading-[110.6%] tracking-[0.72px] uppercase">
+            Fight games
+          </h1>
+        </TransparentButton>
+        <TransparentButton>
+          <h1 className="text-white font-Lato font-medium text-base leading-[110.6%] tracking-[0.72px] uppercase">
+            sport games
+          </h1>
+        </TransparentButton>
       </div>
     </div>
 

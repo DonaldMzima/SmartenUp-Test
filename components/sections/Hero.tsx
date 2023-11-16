@@ -2,6 +2,8 @@ import styles from '@/styles/style'
 import Stats from '../ui/Stats'
 import { bannerTexts } from '@/utils'
 import { Marquee } from '../ui/Marquee'
+import { TransparentButton } from '../ui/Buttons/TransparentButton'
+import { MainButton } from '../ui/Buttons/MainButton'
 
 const Hero = () => {
   return (
@@ -38,20 +40,16 @@ const Hero = () => {
             term that suggests regular gameplay, possibly as a hobby.
           </p>
           <div className="flex mt-5">
-            <a href="/link-to-where-you-want-to-go" className="cursor-pointer">
-              <img
-                src={'/SVGs/gradientButton.svg'}
-                alt="Logo"
-                className="w-232 h-74 flex-shrink-0"
-              />
-            </a>
-            <a href="/another-link" className="cursor-pointer">
-              <img
-                src={'/SVGs/colorlessButton.svg'}
-                alt="Logo"
-                className="w-232 h-74 flex-shrink-0"
-              />
-            </a>
+            <MainButton>
+              <h1 className="text-white font-Lato font-medium text-base leading-[110.6%] tracking-wide uppercase">
+                BUY NOW
+              </h1>
+            </MainButton>
+            <TransparentButton>
+              <h1 className="text-white font-Lato font-medium text-base leading-[110.6%] tracking-[0.72px] uppercase">
+                <img src={'/assets/images/PlayNow.png'} />
+              </h1>
+            </TransparentButton>
           </div>
 
           <Stats />

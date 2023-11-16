@@ -1,13 +1,14 @@
 import React from 'react'
+import { AppsButton } from './Buttons/AppsButton'
 
 export type AppsCardsProps = {
   src: string
   name: string
-  title: string
+  subtitle: string
   img: string
 }
 
-const AppsCards: React.FC<AppsCardsProps> = ({ src, name, title, img }) => (
+const AppsCards: React.FC<AppsCardsProps> = ({ src, name, subtitle, img }) => (
   <div
     style={{
       width: '397px',
@@ -38,19 +39,17 @@ const AppsCards: React.FC<AppsCardsProps> = ({ src, name, title, img }) => (
         </h4>
 
         <p className="font-poppins font-normal text-[16px] leading-[24px] text-white">
-          {title}
+          {subtitle}
         </p>
       </div>
     </div>
     <div>
       {' '}
-      <a href="/another-link" className="cursor-pointer ">
-        <img
-          src={'/SVGs/AppsButton.svg'}
-          alt="Logo"
-          className="w-259 h-33 flex-shrink-0 ml-4 mt-7 "
-        />
-      </a>
+      <AppsButton>
+        <h1 className="text-white font-Lato font-medium text-base leading-[110.6%] tracking-[0.72px] uppercase mt-6 ">
+          LIVE DEMO
+        </h1>
+      </AppsButton>
     </div>
   </div>
 )
