@@ -11,7 +11,7 @@ const Navbar = () => {
       className="w-full flex py-6 justify-between items-center navbar"
       style={{
         background:
-          'linear-gradient(299deg, rgba(45,30,107,1) 80%, rgba(189,0,221,1) 100%)',
+          'linear-gradient(299deg, rgba(45,30,107,1) 49%, rgba(73,7,95,1) 100%)',
       }}
     >
       <div className="flex items-center ">
@@ -52,7 +52,7 @@ const Navbar = () => {
         <div
           className={`${
             !toggle ? 'hidden' : 'flex'
-          } p-6 bg-black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
+          } p-6 bg- absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded- sidebar`}
         >
           <ul className="list-none flex justify-end items-start flex-1 flex-col">
             {navLinks.map((nav, index) => (

@@ -12,13 +12,13 @@ const Hero = () => {
     <>
       <section
         id="Products"
-        className={`flex md:flex-row flex-col ${styles.paddingY}`}
         style={{
           background:
-            'linear-gradient(299deg, rgba(45,30,107,1) 80%, #49075f 100%);',
+            'linear-gradient(299deg, rgba(45,30,107,1) 49%, rgba(73,7,95,1) 100%);',
         }}
       >
         <div
+          className={`flex md:flex-row flex-col ${styles.paddingY}`}
           style={{
             background: `url('/assets/Artboard.png') lightgray -91.869px 41.66px / 102.737% 92.356% no-repeat`,
             mixBlendMode: 'color-dodge',
