@@ -8,24 +8,23 @@ import styles from '@/styles/style'
 const Footer = () => (
   <>
     {/* Marquee Section */}
-    <div
-      className="bg-cover bg-center relative"
-      style={{ backgroundImage: 'url("/assets/images/border.png")' }}
-    >
+    <div>
       <Marquee items={bannerTexts} className="flex-shrink-0" />
     </div>
 
     {/* Main Footer Section */}
     <section
-      className={`${styles.flexCenter} ${styles.paddingY} w-full relative`}
+      className={` w-full relative`}
       style={{
         background: `url('/assets/images/footer.png') lightgray -0.573px -40.736px / 100.066% 108.213% no-repeat`,
         mixBlendMode: 'color-dodge',
       }}
     >
-      <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
+      <div
+        className={`flex flex-wrap justify-center md:flex-row flex-col items-center mb-8 w-full`}
+      >
         {/* Logo and Description */}
-        <div className="flex-[1] flex flex-col justify-start md:mr-10 mb-10 md:mb-0">
+        <div className=" flex flex-col ">
           <div className="flex items-center">
             <img src={'/SVGs/logo.svg'} alt="Logo" width="32" height="32" />
             <span className="ml-2 text-white font-Ondo text-1xl font-extrabold leading-[43.994px] tracking-widest">
@@ -67,24 +66,19 @@ const Footer = () => (
           ))}
         </div>
       </div>
-
       {/* Company Logos */}
-      <div className="md:hidden text-center">
-        <div className="flex flex-wrap justify-center items-end">
+      <div className=" text-center">
+        <div className="flex flex-wrap justify-center ">
           {Companies.map((company: any) => (
-            <div
-              key={company.id}
-              className="m-4"
-              style={{ width: '167px', height: '29.098px', flexShrink: 0 }}
-            >
-              <img src={company.logo} alt={company.id} className="w-24 h-24" />
+            <div key={company.id} className="m-4">
+              <img src={company.logo} alt={company.id} />
             </div>
           ))}
         </div>
       </div>
 
       {/* Bottom Section */}
-      <div className="w-full flex justify-between items-center md:flex-row flex-col pt-6">
+      <div className="w-full flex justify-between items-center md:flex-row text-white flex-col pt-6">
         <div className="flex flex-row md:mt-0 mt-6">
           {/* Social Media Icons */}
           {socialMedia.map((social, index) => (
@@ -97,10 +91,7 @@ const Footer = () => (
               onClick={() => window.open(social.link)}
             />
           ))}
-          {/* Copyright Text */}
-          <div className="text-center text-white mt-6">
-            © Copyright 2023, All Rights Reserved by board
-          </div>
+          {/* Copyright Text */}© Copyright 2023, All Rights Reserved by board
         </div>
       </div>
     </section>
