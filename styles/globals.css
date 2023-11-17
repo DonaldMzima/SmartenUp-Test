@@ -162,3 +162,14 @@ body {
   background: rgba(255, 255, 255, 0.6);
   filter: blur(750px);
 } */
+
+/* Assuming you're using a separate stylesheet, e.g., styles.css */
+
+/* @media (min-width: 768px) {
+  #Products {
+    background: url('/assets/Artboard.png') lightgray -91.869px 41.66px / 102.737%
+      92.356% no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+} */
