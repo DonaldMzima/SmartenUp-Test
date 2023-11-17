@@ -181,52 +181,52 @@ export const Companies = [
 
 export const footerLinks = [
   {
-    title: 'company',
+    title: 'Company',
     links: [
       {
-        name: 'products',
+        name: 'Products',
         link: 'https://www.hoobank.com/content/',
       },
       {
-        name: 'apps & games',
+        name: 'Apps & Games',
         link: 'https://www.hoobank.com/how-it-works/',
       },
       {
-        name: 'features',
+        name: 'Features',
         link: 'https://www.hoobank.com/create/',
       },
     ],
   },
   {
-    title: 'help',
+    title: 'Help',
     links: [
       {
-        name: 'support',
+        name: 'Support',
         link: 'https://www.hoobank.com/help-center/',
       },
       {
-        name: 'about',
+        name: 'About',
         link: 'https://www.hoobank.com/partners/',
       },
       {
-        name: 'contact us',
+        name: 'Contact us',
         link: 'https://www.hoobank.com/suggestions/',
       },
     ],
   },
   {
-    title: 'resources',
+    title: 'Resources',
     links: [
       {
-        name: 'youtube playlist',
+        name: 'Youtube Playlist',
         link: 'https://www.hoobank.com/our-partner/',
       },
       {
-        name: 'how to - blog',
+        name: 'How To - Blog',
         link: 'https://www.hoobank.com/become-a-partner/',
       },
       {
-        name: 'terms & conditions',
+        name: 'Terms & Conditions',
         link: 'https://www.hoobank.com/become-a-partner/',
       },
     ],
