@@ -9,7 +9,10 @@ const Navbar = () => {
   return (
     <nav
       className="w-full flex py-6 justify-between items-center navbar"
-      style={{ background: '#2D1E6B' }}
+      style={{
+        background:
+          'linear-gradient(299deg, rgba(45,30,107,1) 80%, rgba(189,0,221,1) 100%)',
+      }}
     >
       <div className="flex items-center ">
         <img src={'/SVGs/logo.svg'} alt="Logo" width="32" height="32" />
