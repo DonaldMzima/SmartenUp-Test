@@ -15,7 +15,7 @@ const Hero = () => {
         className={`flex md:flex-row flex-col ${styles.paddingY}`}
         style={{
           background:
-            'linear-gradient(299deg, rgba(45,30,107,1) 80%, #530c6b 100%);',
+            'linear-gradient(299deg, rgba(45,30,107,1) 80%, #49075f 100%);',
         }}
       >
         <div
