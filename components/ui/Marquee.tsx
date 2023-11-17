@@ -94,7 +94,7 @@ export const Marquee: FC<MarqueeProps> = ({
         {doubledItems.map((item, index) => (
           <div key={index} className="inline-flex items-center mr-5 gap-10">
             <Image
-              src={item.imageUrl || '/assets/images/star.png'}
+              src={'/assets/images/Star.png'}
               alt={item.text}
               className="ml-20 h-10 w-11"
               width={44}
