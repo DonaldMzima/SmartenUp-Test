@@ -21,51 +21,54 @@ const Footer = () => (
       }}
     >
       <div
-        className={`flex flex-wrap justify-center md:flex-row flex-col items-center mb-8 w-full`}
+        className={`flex flex-wrap justify-center flex-col   items-center mb-8 w-full`}
       >
         {/* Logo and Description */}
-        <div className=" flex flex-col ">
-          <div className="flex items-center">
-            <img src={'/SVGs/logo.svg'} alt="Logo" width="32" height="32" />
-            <span className="ml-2 text-white font-Ondo text-1xl font-extrabold leading-[43.994px] tracking-widest">
-              board
-            </span>
-          </div>
-          <p
-            className={`${styles.paragraph} mt-4 max-w-[312px] font-poppins font-normal text-[18px] leading-[27px] text-white`}
-          >
-            A well-designed gaming header often incorporates elements such as
-            game characters, iconic symbols, vibrant colors, and dynamic
-            visuals.
-          </p>
-        </div>
-
-        {/* Footer Links */}
-        <div className="flex-[1.5] w-full mx-auto flex flex-row flex-wrap md:mt-0 mt-10 text-center">
-          {footerLinks.map((footerlink) => (
-            <div
-              key={footerlink.title}
-              className={`flex flex-col ss:my-0 my-4 min-w-[150px]`}
-            >
-              <h4 className="font-poppins font-medium text-[18px] leading-[27px] text-white">
-                {footerlink.title}
-              </h4>
-              <ul className="list-none mt-8">
-                {footerlink.links.map((link, index) => (
-                  <li
-                    key={link.name}
-                    className={`font-poppins font-normal text-[16px] text-white leading-[24px] text-dimWhite hover:text-secondary cursor-pointer ${
-                      index !== footerlink.links.length - 1 ? 'mb-10' : 'mb-0'
-                    }`}
-                  >
-                    {link.name}
-                  </li>
-                ))}
-              </ul>
+        <div className="flex items-center justify-center">
+          <div className="flex flex-col ">
+            <div className="flex  ">
+              <img src={'/SVGs/logo.svg'} alt="Logo" width="32" height="32" />
+              <span className="ml-2 text-white font-Ondo text-1xl font-extrabold leading-[43.994px] tracking-widest">
+                board
+              </span>
             </div>
-          ))}
+            <p
+              className={`${styles.paragraph} mt-4 max-w-[312px] font-poppins font-normal text-[18px] leading-[27px] text-white`}
+            >
+              A well-designed gaming header often incorporates elements such as
+              game characters, iconic symbols, vibrant colors, and dynamic
+              visuals.
+            </p>
+          </div>
+
+          {/* Footer Links */}
+          <div className="flex-[1.5] w-full mx-auto flex flex-row flex-wrap md:mt-0 mt-10 text-center">
+            {footerLinks.map((footerlink) => (
+              <div
+                key={footerlink.title}
+                className={`flex flex-col ss:my-0 my-4 min-w-[150px]`}
+              >
+                <h4 className="font-poppins font-medium text-[18px] leading-[27px] text-white">
+                  {footerlink.title}
+                </h4>
+                <ul className="list-none mt-8">
+                  {footerlink.links.map((link, index) => (
+                    <li
+                      key={link.name}
+                      className={`font-poppins font-normal text-[16px] text-white leading-[24px] text-dimWhite hover:text-secondary cursor-pointer ${
+                        index !== footerlink.links.length - 1 ? 'mb-10' : 'mb-0'
+                      }`}
+                    >
+                      {link.name}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
+
       {/* Company Logos */}
       <div className=" text-center">
         <div className="flex flex-wrap justify-center ">
@@ -78,13 +81,14 @@ const Footer = () => (
       </div>
 
       {/* Bottom Section */}
-      <div className="w-full flex justify-between items-center md:flex-row text-white flex-col pt-6">
+      <div className="w-full flex justify-between items-center md:flex-row text-white flex-col ml-96 pt-6">
         <div className="flex flex-row md:mt-0 mt-6">
           {/* Social Media Icons */}
           {socialMedia.map((social, index) => (
             <img
               key={social.id}
               alt={social.id}
+              src={social.icon}
               className={`w-[21px] h-[21px] object-contain cursor-pointer ${
                 index !== socialMedia.length - 1 ? 'mr-6' : 'mr-0'
               }`}
