@@ -3,6 +3,7 @@ import { bannerTexts, features } from '@/utils'
 import { Marquee } from '../ui/Marquee'
 import { TransparentButton } from '../ui/Buttons/TransparentButton'
 import { MainButton } from '../ui/Buttons/MainButton'
+import Stats from '../ui/Stats'
 
 type FeatureCardProps = {
   src: string
@@ -33,7 +34,7 @@ const Business = () => (
       <div
         className={`${layout.sectionImg} flex flex-col items-center justify-center`}
       >
-        <h1 className="flex-1 font-ondo font-extrabold text-6xl uppercase text-white leading-[76.245px]">
+        <h1 className="flex-1 font-ondo font-extrabold text-4xl md:text-6xl uppercase text-white leading-[76.245px]">
           Choose Your <br className="sm:block hidden" />
           <span className="text-gradient"> Favorite </span> Games
         </h1>
@@ -89,7 +90,7 @@ const Business = () => (
               className="w-725 h-639 flex-shrink-0 bg-lightgray bg-center bg-cover mb-24 bg-no-repeat"
             />
             <div className="flex flex-col justify-center pl-10">
-              <h1 className="w-531 text-white font-Ondo font-extrabold text-4xl md:text-5xl lg:text-6xl leading-[55.968px] tracking-wide uppercase bg-gradient bg-lightgray bg-text">
+              <h1 className="w-531 text-white font-ondo font-extrabold text-4xl md:text-6xl leading-[55.968px] tracking-wide uppercase bg-gradient bg-lightgray bg-text">
                 Discover the <br className="sm:block hidden" />
                 <span className="text-gradient">Virtual</span> Reality
                 <br className="md:block hidden" /> Gaming

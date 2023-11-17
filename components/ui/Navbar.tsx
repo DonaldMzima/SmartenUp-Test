@@ -30,7 +30,7 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-      <div className="flex items-center">
+      <div className=" items-center hidden md:block">
         <img
           src={'/SVGs/bag.svg'}
           alt="Logo"

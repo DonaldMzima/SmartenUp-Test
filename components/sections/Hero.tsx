@@ -12,7 +12,7 @@ const Hero = () => {
     <>
       <section
         id="Products"
-        className={`flex md:flex-row flex-col ${styles.paddingY}`}
+        className={`flex md:flex-row flex-col ${styles.paddingY} bg-#2d1e6b`}
         style={{
           background: `url('/assets/Artboard.png') lightgray -91.869px 41.66px / 102.737% 92.356% no-repeat`,
           mixBlendMode: 'color-dodge',
@@ -41,6 +41,7 @@ const Hero = () => {
             mobile phones, or another medium altogether. Gaming is a nuanced
             term that suggests regular gameplay, possibly as a hobby.
           </p>
+
           <div className="hidden md:hidden lg:block">
             <div className="flex flex-col md:flex-row items-start md:items-center mt-3 md:mt-5">
               <MainButton>
@@ -71,6 +72,23 @@ const Hero = () => {
       </section>
 
       <Marquee items={bannerTexts} tiltAngle={-3} />
+      <div className="block md:hidden lg:hidden">
+        <div className="flex mt-14">
+          {' '}
+          <MainButton>
+            <h1 className="text-white font-Lato font-medium text-base leading-[110.6%] tracking-wide uppercase">
+              BUY NOW
+            </h1>
+          </MainButton>
+          <TransparentButton>
+            <h1 className="text-white font-Lato font-medium text-base leading-[110.6%] tracking-[0.72px] uppercase">
+              <img src={'/assets/images/PlayNow.png'} />
+            </h1>
+          </TransparentButton>
+        </div>
+
+        <Stats />
+      </div>
     </>
   )
 }

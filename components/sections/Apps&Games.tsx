@@ -13,37 +13,29 @@ const AppsGames = () => (
     <div className="absolute z-[0] w-[60%] h-[60%] -right-[50%] rounded-full blue__gradient bottom-40" />
 
     <div className="w-full flex justify-center items-center flex-col sm:mb-16 mb-6 relative z-[1]">
-      <h1 className="font-ondo font-extrabold text-6xl text-white leading-[76.245px] text-center">
+      <h1 className="font-ondo font-extrabold text-4xl md:text-6xl text-white leading-[76.245px] text-center">
         WELCOME TO THE <br />
         TOP
       </h1>
       <div className="flex mt-20">
         <MainButton>
-          <h1 className="text-white font-Lato font-medium text-base leading-[110.6%] tracking-wide uppercase">
+          <h1 className="text-white font-Lato font-medium text-xs sm:text-xs md:text-xl leading-[110.6%] tracking-wide uppercase">
             Newest Games
           </h1>
         </MainButton>
 
-        {/* <a href="/link-to-where-you-want-to-go" className="cursor-pointer">
-          <img
-            src={'/SVGs/gradientButton.svg'}
-            alt="Logo"
-            className="w-232 h-42 flex-shrink-0"
-          />
-          <p>Yoyo</p>
-        </a> */}
         <TransparentButton>
-          <h1 className="text-white font-Lato font-medium text-base leading-[110.6%] tracking-[0.72px] uppercase">
+          <h1 className="text-white font-Lato font-medium text-xs sm:text-xs md:text-xl leading-[110.6%] tracking-[0.72px] uppercase">
             Latest games
           </h1>
         </TransparentButton>
         <TransparentButton>
-          <h1 className="text-white font-Lato font-medium text-base leading-[110.6%] tracking-[0.72px] uppercase">
+          <h1 className="text-white font-Lato font-medium text-xs sm:text-xs md:text-xl leading-[110.6%] tracking-[0.72px] uppercase">
             Fight games
           </h1>
         </TransparentButton>
         <TransparentButton>
-          <h1 className="text-white font-Lato font-medium text-base leading-[110.6%] tracking-[0.72px] uppercase">
+          <h1 className="text-white font-Lato font-medium text-xs sm:text-xs md:text-xl leading-[110.6%] tracking-[0.72px] uppercase">
             sport games
           </h1>
         </TransparentButton>

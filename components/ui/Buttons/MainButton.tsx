@@ -48,7 +48,7 @@ export const MainButton: FC<MainButtonProps> = ({
           <img
             src={'/SVGs/gradientButton.svg'}
             alt="Button Background"
-            className="w-232 h-42 flex-shrink-0"
+            className="w-120 h-42 sm:w-232 sm:h-42 md:w-full md:h-42 lg:w-232 lg:h-42 xl:w-full xl:h-42 flex-shrink-0"
           />
           <div className="absolute">{children}</div>
         </div>
@@ -60,7 +60,7 @@ export const MainButton: FC<MainButtonProps> = ({
           <img
             src={'/SVGs/gradientButton.svg'}
             alt="Button Background"
-            className="w-232 h-42 flex-shrink-0"
+            className="w-120 h-42 sm:w-232 sm:h-42 md:w-full md:h-42 lg:w-232 lg:h-42 xl:w-full xl:h-42 flex-shrink-0"
           />
           <div className="absolute">{children}</div>
         </div>
