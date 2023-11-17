@@ -1,5 +1,5 @@
 import { FC } from 'react'
-
+import Image from 'next/image'
 // Define the type for each item
 export type MarqueeItem = {
   text: string
@@ -93,10 +93,12 @@ export const Marquee: FC<MarqueeProps> = ({
       <div style={marqueeStyle}>
         {doubledItems.map((item, index) => (
           <div key={index} className="inline-flex items-center mr-5 gap-10">
-            <img
+            <Image
               src={item.imageUrl || '/assets/images/star.png'}
               alt={item.text}
               className="ml-20 h-10 w-11"
+              width={44}
+              height={40}
             />
             <span className="text-center text-white mt-2 font-Ondo text-2xl md:text-3xl lg:text-4xl font-extrabold leading-[40.965px] tracking-wide uppercase whitespace-nowrap mr-24">
               {item.text}
